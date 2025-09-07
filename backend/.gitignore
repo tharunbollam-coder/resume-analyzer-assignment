@@ -1,0 +1,17 @@
+# Node.js
+node_modules/
+npm-debug.log
+.env
+
+# Uploads directory (for Multer)
+uploads/
+
+# SQLite Database file
+database/resume_analyzer.db
+
+# Optional: Logs
+*.log
+
+# Optional: Editor/IDE files
+.vscode/
+.idea/
