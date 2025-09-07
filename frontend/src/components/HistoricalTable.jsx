@@ -12,7 +12,7 @@ function HistoricalTable() {
   useEffect(() => {
     const fetchResumes = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/history');
+        const response = await fetch('https://resume-analyzer-assignment.onrender.com/api/history');
         if (!response.ok) {
           throw new Error('Failed to fetch historical data.');
         }
@@ -30,7 +30,7 @@ function HistoricalTable() {
   const fetchResumeDetails = async (id) => {
     try {
       setLoading(true);
-      const response = await fetch(`http://localhost:5000/api/history/${id}`);
+      const response = await fetch(`https://resume-analyzer-assignment.onrender.com/api/history/${id}`);
       if (!response.ok) {
         throw new Error('Failed to fetch resume details.');
       }

@@ -28,7 +28,7 @@ function FileUpload({ onAnalysisResult, onAnalysisError, onLoadingState }) {
     onLoadingState(true);
 
     try {
-      const response = await fetch('http://localhost:5000/api/analyze', {
+      const response = await fetch('https://resume-analyzer-assignment.onrender.com/api/analyze', {
         method: 'POST',
         body: formData,
       });
