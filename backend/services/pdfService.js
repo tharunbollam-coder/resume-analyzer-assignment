@@ -1,5 +1,5 @@
 import fs from "fs";
-import pdf from 'pdf-parse';
+import pdf from "pdf-parse/lib/pdf-parse.js";
 
 const pdfService = {
   extractTextFromPdf: async (filePath) => {
