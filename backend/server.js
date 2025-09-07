@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 if (process.env.NODE_ENV === 'production') {
-  app.use(cors({ origin: 'https://resume-analyzer-assignment-sigma.vercel.app/' }));
+  app.use(cors({ origin: 'https://resume-analyzer-assignment-sigma.vercel.app' }));
 } else {
   app.use(cors()); // open in dev
 }
